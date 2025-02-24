@@ -27,3 +27,12 @@ alter table students MODIFY phone varchar(15) not null;
 -- rename column
 ALTER TABLE [tablename] CHANGE COLUMN [old_name] [new_column_name][datatype];
  ALTER TABLE students CHANGE COLUMN phone mobile VARCHAR(20);
+ -- drop column
+alter table [tablename] drop column [columnname];
+alter table students drop column email;
+    -- insert data into table
+insert into [tablename] (column1, column2, column3) values (value1, value2, value3);
+
+-- insert multiple rows data into table
+ insert into students (id,name, mobile, city) values (3,"salu", "9088435114", "bangaluru"), (4,"sumit", "9000435000", "gurgaon"
+);
